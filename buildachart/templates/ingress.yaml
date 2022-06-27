@@ -38,11 +38,9 @@ spec:
     - host: {{ .host | quote }}
       http:
         paths:
-        {{- range .paths }}
-          - path: {{ . }}
-            backend:
-              serviceName: {{ $fullName }}
-              servicePort: {{ $svcPort }}
+          - backend:
+              serviceName: cherry-chart
+              servicePort: 80
         {{- end }}
   {{- end }}
 {{- end }}
