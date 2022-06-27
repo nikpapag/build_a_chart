@@ -41,5 +41,7 @@ spec:
           - backend:
               serviceName: cherry-chart
               servicePort: 80
+            path: /
+            pathType: ImplementationSpecific
   {{- end }}
 {{- end }}
