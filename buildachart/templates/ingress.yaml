@@ -41,6 +41,5 @@ spec:
           - backend:
               serviceName: cherry-chart
               servicePort: 80
-        {{- end }}
   {{- end }}
 {{- end }}
